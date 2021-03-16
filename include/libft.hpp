@@ -6,7 +6,7 @@
 /*   By: jacens <jacens@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/10 14:05:15 by jacens            #+#    #+#             */
-/*   Updated: 2021/03/09 12:36:04 by jacens           ###   ########lyon.fr   */
+/*   Updated: 2021/03/16 17:22:10 by jacens           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,11 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+void				ft_lstiter(t_list *lst, void (*f)(void *));
+void				ft_lstadd_front(t_list **alst, t_list *news);
+void				ft_lstadd_back(t_list **alst, t_list *news);
+void				ft_lstdelone(t_list *lst, void (*del)(void*));
+void				ft_lstclear(t_list **lst, void (*del)(void *));
 void				ft_bzero(void *s, size_t n);
 void				*ft_calloc(size_t count, size_t size);
 void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
