@@ -6,13 +6,13 @@
 #    By: jacens <jacens@student.42lyon.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/18 15:41:28 by jacens            #+#    #+#              #
-#    Updated: 2021/03/16 17:20:58 by jacens           ###   ########lyon.fr    #
+#    Updated: 2021/03/23 14:40:52 by jacens           ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
 NAME    =   libft.a
 
-CC      =   gcc 
+CC      =   clang++ 
 CFLAGS  =   -Wall -Wextra -Werror
 HEADER 	=    include/
 LFLAGS  =   -I $(HEADER)
